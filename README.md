@@ -1,0 +1,1 @@
+Momentáneamente el nombre del proyecto de CuponesApi es GrupoB
