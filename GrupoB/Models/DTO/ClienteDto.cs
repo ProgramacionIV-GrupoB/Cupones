@@ -1,4 +1,4 @@
-﻿namespace GrupoB.Models.DTO
+﻿namespace CuponesApi.Models.DTO
 {
     public class ClienteDto
     {

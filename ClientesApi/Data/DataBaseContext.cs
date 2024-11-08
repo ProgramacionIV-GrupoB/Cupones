@@ -6,12 +6,12 @@ namespace ClientesApi.Data
     public class DataBaseContext : DbContext
     {
         public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options) { }
-        public DbSet<ClienteModel> Clientes { get; set; }
+        public DbSet<ClientesModel> Clientes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
 
         {
-            modelBuilder.Entity<ClienteModel>()
+            modelBuilder.Entity<ClientesModel>()
                 .HasKey(c => c.CodCliente);
          
 

@@ -1,6 +1,6 @@
-﻿using GrupoB.Interfaces;
+﻿using CuponesApi.Interfaces;
 
-namespace GrupoB.Services
+namespace CuponesApi.Services
 {
     public class CuponesService : ICuponesService
     {

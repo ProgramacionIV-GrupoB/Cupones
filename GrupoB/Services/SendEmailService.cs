@@ -1,32 +1,48 @@
-﻿using GrupoB.Interfaces;
+﻿using CuponesApi.Interfaces;
 using System.Net;
 using System.Net.Mail;
+using System.Threading.Tasks;
 
-namespace GrupoB.Services
+namespace CuponesApi.Services
 {
-    public class SendEmailService : ISendEmailService //hereda la interfaz
+    public class SendEmailService : ISendEmailService
     {
-        public async Task EnviarEmailCliente(string emailCliente, string nroCupon)
-        {
-            string emailDesde = "recursoshumanos.noresponder@gmail.com";
-            string emailClave = "drrj ablq dcul yjxt"; //para auntenticar el envio y llevarlo a cabo, para generarlo lo explica en 1:27:00
-            string servicioGoogle = "smtp.gmail.com";
+        private readonly string _emailFrom = "recursoshumanos.noresponder@gmail.com";
+        private readonly string _emailPassword = "drrj ablq dcul yjxt";
+        private readonly string _smtpServer = "smtp.gmail.com";
 
+        public async Task EnviarEmailReclamo(string emailCliente, string Id_Cupon)
+        {
+            await EnviarEmail(emailCliente, "Número de cupón asignado", $"Su número de cupón es: {Id_Cupon}.");
+        }
+
+        public async Task EnviarEmailUso(string emailCliente, string nroCupon)
+        {
+            await EnviarEmail(emailCliente, "Cupón utilizado", $"Su cupón con el número {nroCupon} ha sido utilizado.");
+        }
+
+        private async Task EnviarEmail(string emailTo, string subject, string body)
+        {
             try
             {
-                SmtpClient smtpClient = new SmtpClient(servicioGoogle);
-                smtpClient.Port = 587;
-                smtpClient.Credentials = new NetworkCredential(emailDesde, emailClave);
-                smtpClient.EnableSsl = true;
+                using (var smtpClient = new SmtpClient(_smtpServer))
+                {
+                    smtpClient.Port = 587;
+                    smtpClient.Credentials = new NetworkCredential(_emailFrom, _emailPassword);
+                    smtpClient.EnableSsl = true;
 
-                MailMessage message = new MailMessage();
-                message.From = new MailAddress(emailDesde, "ProgramacionIV"); // lo segundo es para que no se vea el mail al enviarlo
-                message.To.Add(emailCliente);
-                message.Subject = "Número de cupón asignado"; //asunto del email
-                message.Body = $"Su número de cupón es: {nroCupon}."; // relaciones entre las tablas para enviarle los datos (hacer?)
-                await smtpClient.SendMailAsync(message);
+                    var message = new MailMessage
+                    {
+                        From = new MailAddress(_emailFrom, "ProgramacionIV"),
+                        To = { new MailAddress(emailTo) },
+                        Subject = subject,
+                        Body = body
+                    };
+
+                    await smtpClient.SendMailAsync(message);
+                }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

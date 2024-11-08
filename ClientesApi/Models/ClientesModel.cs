@@ -2,7 +2,7 @@
 
 namespace ClientesApi.Models
 {
-    public class ClienteModel
+    public class ClientesModel
     {
         [Key]
         public string CodCliente { get; set; }

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GrupoB.Models
+namespace CuponesApi.Models
 {
     public class Cupon_CategoriaModel
     {

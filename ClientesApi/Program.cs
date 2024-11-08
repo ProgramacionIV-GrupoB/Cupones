@@ -14,10 +14,7 @@ builder.Services.AddControllers();
 // Configuración del contexto de la base de datos
 builder.Services.AddDbContext<DataBaseContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
 
-builder.Services.AddScoped<IClienteService, ClienteService>();
-builder.Services.AddHttpClient<CuponController>();
-//builder.Services.AddScoped<ICuponesService>();
-//builder.Services.AddScoped<ISendEmailService>();
+builder.Services.AddScoped<ICuponesService, CuponesService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

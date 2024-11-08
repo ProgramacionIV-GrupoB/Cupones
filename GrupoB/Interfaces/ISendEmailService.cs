@@ -1,7 +1,8 @@
-﻿namespace GrupoB.Interfaces
+﻿namespace CuponesApi.Interfaces
 {
     public interface ISendEmailService
     {
-        Task EnviarEmailCliente(string emailCliente, string nroCupon);
+        Task EnviarEmailReclamo(string emailCliente, string nroCupon);
+        Task EnviarEmailUso(string emailCliente, string nroCupon);
     }
 }

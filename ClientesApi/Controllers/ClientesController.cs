@@ -9,35 +9,18 @@ namespace ClientesApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClienteController : ControllerBase
+    public class ClientesController : ControllerBase
     {
         private readonly DataBaseContext _context;
-        private readonly IClienteService _clienteService;
 
-        public ClienteController(DataBaseContext context, IClienteService clienteService)
+        public ClientesController(DataBaseContext context)
         {
             _context = context;
-            _clienteService = clienteService;
-        }
-
-        // Método para enviar solicitud a cupones
-        [HttpPost("solicitar-cupon")]
-        public async Task<IActionResult> EnviarSolicitudACupones([FromBody] ClienteDto clienteDto)
-        {
-            try
-            {
-                var respuesta = await _clienteService.SolicitarCupon(clienteDto);
-                return Ok(new { mensaje = "Solicitud de cupón enviada exitosamente.", respuesta });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error al enviar la solicitud: {ex.Message}");
-            }
         }
 
         // Alta: Crear un nuevo cliente
         [HttpPost]
-        public async Task<IActionResult> CrearCliente([FromBody] ClienteModel cliente)
+        public async Task<IActionResult> CrearCliente([FromBody] ClientesModel cliente)
         {
             if (cliente == null)
             {
@@ -74,7 +57,7 @@ namespace ClientesApi.Controllers
 
         // Modificar un cliente existente por código de cliente
         [HttpPut("{codCliente}")]
-        public async Task<IActionResult> ActualizarCliente(string codCliente, [FromBody] ClienteModel clienteActualizado)
+        public async Task<IActionResult> ActualizarCliente(string codCliente, [FromBody] ClientesModel clienteActualizado)
         {
             if (clienteActualizado == null)
             {
@@ -105,7 +88,7 @@ namespace ClientesApi.Controllers
 
         // Obtener todos los clientes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ClienteModel>>> ObtenerClientes()
+        public async Task<ActionResult<IEnumerable<ClientesModel>>> ObtenerClientes()
         {
             var clientes = await _context.Clientes.ToListAsync();
 
@@ -120,7 +103,7 @@ namespace ClientesApi.Controllers
 
         // Obtener un cliente por CodCliente
         [HttpGet("{codCliente}")]
-        public async Task<ActionResult<ClienteModel>> ObtenerClientePorCodCliente(string codCliente)
+        public async Task<ActionResult<ClientesModel>> ObtenerClientePorCodCliente(string codCliente)
         {
             var cliente = await _context.Clientes.FirstOrDefaultAsync(c => c.CodCliente == codCliente);
 

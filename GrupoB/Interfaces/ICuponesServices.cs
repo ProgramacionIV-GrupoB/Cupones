@@ -1,4 +1,4 @@
-﻿namespace GrupoB.Interfaces
+﻿namespace CuponesApi.Interfaces
 {
     public interface ICuponesService
     {

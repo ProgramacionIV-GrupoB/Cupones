@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GrupoB.Models
+namespace CuponesApi.Models
 {
 
     [Table("Tipo_Cupon")]

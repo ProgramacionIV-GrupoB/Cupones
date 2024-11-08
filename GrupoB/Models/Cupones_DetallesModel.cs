@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 
-namespace GrupoB.Models
+namespace CuponesApi.Models
 {
     public class Cupones_DetallesModel
     {

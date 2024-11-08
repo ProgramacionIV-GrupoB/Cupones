@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-using GrupoB.Data;
-using GrupoB.Interfaces;
-using GrupoB.Services;
-using GrupoB.Controllers;
+using CuponesApi.Data;
+using CuponesApi.Interfaces;
+using CuponesApi.Services;
+using CuponesApi.Controllers;
 
 
 var builder = WebApplication.CreateBuilder(args); // Crear build

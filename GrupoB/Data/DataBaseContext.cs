@@ -1,7 +1,7 @@
-﻿using GrupoB.Models;
+﻿using CuponesApi.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace GrupoB.Data
+namespace CuponesApi.Data
 {
     public class DataBaseContext : DbContext
     {

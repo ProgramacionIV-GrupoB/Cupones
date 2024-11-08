@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GrupoB.Models
+namespace CuponesApi.Models
 {
     public class Cupones_HistorialModel
     {
@@ -8,7 +8,7 @@ namespace GrupoB.Models
         public int Id_Cupon { get; set; }
         [Key]
         public string NroCupon { get; set; }
-        public DateTime FechaUso { get; set; }
+        public DateTime? FechaUso { get; set; }
         public string CodCliente { get; set; }  
     }
 }

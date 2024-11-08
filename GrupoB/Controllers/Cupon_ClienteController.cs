@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using GrupoB.Data;
-using GrupoB.Models;
+using CuponesApi.Data;
+using CuponesApi.Models;
 
-namespace GrupoB.Controllers
+namespace CuponesApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
