@@ -1,0 +1,149 @@
+[
+  {
+    "ContainingType": "ClientesApi.Controllers.ClientesController",
+    "Method": "CrearCliente",
+    "RelativePath": "api/Clientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "ClientesApi.Models.ClientesModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientesApi.Controllers.ClientesController",
+    "Method": "ObtenerClientes",
+    "RelativePath": "api/Clientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ClientesApi.Models.ClientesModel, ClientesApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ClientesApi.Controllers.ClientesController",
+    "Method": "EliminarCliente",
+    "RelativePath": "api/Clientes/{codCliente}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codCliente",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientesApi.Controllers.ClientesController",
+    "Method": "ActualizarCliente",
+    "RelativePath": "api/Clientes/{codCliente}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codCliente",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "clienteActualizado",
+        "Type": "ClientesApi.Models.ClientesModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientesApi.Controllers.ClientesController",
+    "Method": "ObtenerClientePorCodCliente",
+    "RelativePath": "api/Clientes/{codCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codCliente",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ClientesApi.Models.ClientesModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ClientesApi.Controllers.CuponesController",
+    "Method": "EnviarSolicitudCupones",
+    "RelativePath": "api/Cupones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteDTO",
+        "Type": "ClientesApi.Models.DTO.ClienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientesApi.Controllers.CuponesController",
+    "Method": "ObtenerCuponesActivos",
+    "RelativePath": "api/Cupones/cliente/{codigoCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoCliente",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientesApi.Controllers.CuponesController",
+    "Method": "UsarCupon",
+    "RelativePath": "api/Cupones/UsarCupon",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuponDto",
+        "Type": "CuponDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
