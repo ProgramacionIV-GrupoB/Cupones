@@ -1,0 +1,4 @@
+2024-11-14 19:20:21.179 -03:00 [INF] ¡Se solicitó un nuevo cupón!
+2024-11-14 19:21:17.860 -03:00 [INF] Se usó un cupón.
+2024-11-14 19:21:42.340 -03:00 [INF] ¡Se solicitó un nuevo cupón!
+2024-11-14 19:21:58.965 -03:00 [INF] Se usó un cupón.

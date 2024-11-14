@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CuponesApi.Data;
 using CuponesApi.Models;
+using Serilog;
 
 namespace CuponesApi.Controllers
 {
@@ -30,7 +31,7 @@ namespace CuponesApi.Controllers
                 .Include(a => a.Precio)
                 .Where(a => a.Activo) // Excluir los que fueron eliminados
                 .ToListAsync();
-
+            Log.Information($"Se consultó al endpoint para obtener todos los artículos");
             return articulos;
         }
 
@@ -48,6 +49,7 @@ namespace CuponesApi.Controllers
                 return NotFound();
             }
 
+            Log.Information($"Se consultó al endpoint para obtener un artículo por ID");
             return articuloModel;
         }
 
@@ -73,6 +75,7 @@ namespace CuponesApi.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                Log.Information($"Se modificó un artículo");
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -118,12 +121,14 @@ namespace CuponesApi.Controllers
                     nuevoArticulo.Precio = nuevoPrecio;
                 }
 
+                Log.Information($"Se creó un nuevo artículo");
                 return CreatedAtAction("GetArticuloModel",
                     new { id = nuevoArticulo.Id_Articulo },
                     nuevoArticulo);
             }
             catch (Exception ex)
             {
+                Log.Error($"Ocurrió un error interno al crear un artículo: {ex.Message}");
                 return StatusCode(500, "Error interno al crear el artículo: " + ex.Message);
             }
         }
@@ -140,6 +145,7 @@ namespace CuponesApi.Controllers
 
             articuloModel.Activo = false; // Lo cambie para cumplir con el requerimiento del trabajo, antes borraba el registro
             await _context.SaveChangesAsync();
+            Log.Information($"Se eliminó un artículo");
 
             return NoContent();
         }

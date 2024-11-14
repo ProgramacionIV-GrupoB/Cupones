@@ -2,11 +2,11 @@
 using CuponesApi.Interfaces;
 using CuponesApi.Models;
 using CuponesApi.Models.DTO;
-using CuponesApi.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace CuponesApi.Controllers
 {
@@ -59,6 +59,7 @@ namespace CuponesApi.Controllers
 
                 await _sendEmailService.EnviarEmailReclamo(clienteDto.Email, nroCupon);
 
+                Log.Information($"Se dió de alta un cupón y se le envió al cliente por correo electrónico.");
                 return Ok($"Se dió de alta el cupón. ¡Revisá tu correo electrónico!");
 
 
@@ -66,6 +67,7 @@ namespace CuponesApi.Controllers
             catch (Exception ex)
 
             {
+                Log.Error($"Se intentó dar de alta un cupón, pero ocurrió un error: {ex.Message}");
                 return BadRequest($"Ocurrió un error: {ex.Message}");
             }
         }
@@ -80,6 +82,7 @@ namespace CuponesApi.Controllers
 
                 if (cuponCliente == null)
                 {
+                    Log.Error($"Se intentó utilizar un cupón, pero el cupón con ID {cuponDto.NroCupon} no pertenece al Cod-Cliente {cuponDto.CodCliente}.");
                     return BadRequest($"El cupón {cuponDto.NroCupon} no pertenece al cliente con Cod-Cliente {cuponDto.CodCliente}.");
                 }
 
@@ -98,10 +101,12 @@ namespace CuponesApi.Controllers
 
                 await _sendEmailService.EnviarEmailUso(cuponDto.Email, cuponDto.NroCupon);
 
+                Log.Information($"Se utilizó el cupón con ID {cuponDto.NroCupon}.");
                 return Ok($"El cupón {cuponDto.NroCupon} fue utilizado correctamente.");
             }
             catch (Exception ex)
             {
+                Log.Error($"Se intentó utilizar el cupón CON ID {cuponDto.NroCupon}, pero ocurrió un error: {ex.Message}.");
                 return BadRequest($"Ocurrió un error: {ex.Message}");
             }
         }

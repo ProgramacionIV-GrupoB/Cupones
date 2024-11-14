@@ -1,0 +1,5 @@
+2024-11-14 19:20:21.123 -03:00 [INF] Se dió de alta un cupón y se le envió al cliente por correo electrónico.
+2024-11-14 19:21:17.855 -03:00 [INF] Se utilizó el cupón con ID 146-163-018.
+2024-11-14 19:21:42.339 -03:00 [INF] Se dió de alta un cupón y se le envió al cliente por correo electrónico.
+2024-11-14 19:21:45.037 -03:00 [INF] Se llamó al endpoint para obtener un cupón por CodCliente.
+2024-11-14 19:21:58.964 -03:00 [INF] Se utilizó el cupón con ID 406-055-401.

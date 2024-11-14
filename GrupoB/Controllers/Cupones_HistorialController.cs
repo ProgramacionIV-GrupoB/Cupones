@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CuponesApi.Data;
 using CuponesApi.Models;
+using Serilog;
 
 namespace CuponesApi.Controllers
 {
@@ -25,6 +26,8 @@ namespace CuponesApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cupones_HistorialModel>>> GetCupones_Historial()
         {
+
+            Log.Information($"Se llamó al endpoint para obtener el historial de cupones (cupones expirados).");
             return await _context.Cupones_Historial.ToListAsync();
         }
 
@@ -33,6 +36,7 @@ namespace CuponesApi.Controllers
         public async Task<ActionResult<Cupones_HistorialModel>> GetCupones_HistorialModel(int id)
         {
             var cupones_HistorialModel = await _context.Cupones_Historial.FindAsync(id);
+            Log.Information($"Se llamó al endpoint para obtener un cupón en el historial (expirado) por ID.");
 
             if (cupones_HistorialModel == null)
             {
@@ -53,6 +57,7 @@ namespace CuponesApi.Controllers
             }
 
             _context.Entry(cupones_HistorialModel).State = EntityState.Modified;
+            Log.Information($"Se modificó el historial de un cupón.");
 
             try
             {
@@ -81,6 +86,7 @@ namespace CuponesApi.Controllers
             _context.Cupones_Historial.Add(cupones_HistorialModel);
             try
             {
+                Log.Information($"Se utilizó un cupón y se introdujo en el historial.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException)
@@ -108,6 +114,7 @@ namespace CuponesApi.Controllers
                 return NotFound();
             }
 
+            Log.Information($"Se eliminó el rastro de un cupón.");
             _context.Cupones_Historial.Remove(cupones_HistorialModel);
             await _context.SaveChangesAsync();
 

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CuponesApi.Data;
 using CuponesApi.Models;
+using Serilog;
 
 namespace CuponesApi.Controllers
 {
@@ -25,6 +26,7 @@ namespace CuponesApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cupon_ClienteModel>>> GetCupones_Clientes()
         {
+            Log.Information($"Se llamó al endpoint para obtener todos los cupones de un cliente.");
             return await _context.Cupones_Clientes.ToListAsync();
         }
 
@@ -33,6 +35,8 @@ namespace CuponesApi.Controllers
         public async Task<ActionResult<Cupon_ClienteModel>> GetCupon_ClienteModel(string id)
         {
             var cupon_ClienteModel = await _context.Cupones_Clientes.FindAsync(id);
+            Log.Information($"Se llamó al endpoint para obtener un cupón por ID de cliente.");
+
 
             if (cupon_ClienteModel == null)
             {
@@ -56,6 +60,7 @@ namespace CuponesApi.Controllers
 
             try
             {
+                Log.Information($"Se modificó el cupón de un cliente.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -83,6 +88,7 @@ namespace CuponesApi.Controllers
             _context.Cupones_Clientes.Add(cupon_ClienteModel);
             try
             {
+                Log.Information($"Se creó un nuevo cupón para un cliente.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException)
@@ -111,6 +117,7 @@ namespace CuponesApi.Controllers
             }
 
             _context.Cupones_Clientes.Remove(cupon_ClienteModel);
+            Log.Information($"Se eliminó un cupón para un cliente (¿se usó?)");
             await _context.SaveChangesAsync();
 
             return NoContent();

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CuponesApi.Data;
 using CuponesApi.Models;
+using Serilog;
 
 namespace CuponesApi.Controllers
 {
@@ -25,6 +26,7 @@ namespace CuponesApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Tipo_CuponModel>>> GetTipo_Cupon()
         {
+            Log.Information($"Se llamó al endpoint para obtener los tipos de los cupones.");
             return await _context.Tipo_Cupon.ToListAsync();
         }
 
@@ -39,6 +41,7 @@ namespace CuponesApi.Controllers
                 return NotFound();
             }
 
+            Log.Information($"Se llamó al endpoint para obtener el TipoCupón por ID.");
             return tipo_CuponModel;
         }
 
@@ -56,6 +59,7 @@ namespace CuponesApi.Controllers
 
             try
             {
+                Log.Information($"Se modificó el tipo de un cupón.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -79,6 +83,7 @@ namespace CuponesApi.Controllers
         public async Task<ActionResult<Tipo_CuponModel>> PostTipo_CuponModel(Tipo_CuponModel tipo_CuponModel)
         {
             _context.Tipo_Cupon.Add(tipo_CuponModel);
+            Log.Information($"Se estableció el tipo de un cupón.");
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetTipo_CuponModel", new { id = tipo_CuponModel.Id_Tipo_Cupon }, tipo_CuponModel);
@@ -94,6 +99,7 @@ namespace CuponesApi.Controllers
                 return NotFound();
             }
 
+            Log.Information($"Se eliminó el tipo de un cupón.");
             _context.Tipo_Cupon.Remove(tipo_CuponModel);
             await _context.SaveChangesAsync();
 

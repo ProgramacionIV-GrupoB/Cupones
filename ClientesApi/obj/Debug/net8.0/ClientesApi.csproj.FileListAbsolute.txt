@@ -520,3 +520,5 @@ C:\Users\Fran\Source\Repos\Cupones\ClientesApi\bin\Debug\net8.0\ClientesApi.stat
 C:\Users\Fran\Source\Repos\Cupones\ClientesApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\Fran\Source\Repos\Cupones\ClientesApi\obj\Debug\net8.0\staticwebassets\msbuild.ClientesApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\Fran\Source\Repos\Cupones\ClientesApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Fran\Source\Repos\Cupones\ClientesApi\bin\Debug\net8.0\Serilog.dll
+C:\Users\Fran\Source\Repos\Cupones\ClientesApi\bin\Debug\net8.0\Serilog.Sinks.File.dll

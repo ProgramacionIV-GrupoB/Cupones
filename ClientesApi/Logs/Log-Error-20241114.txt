@@ -1,0 +1,3 @@
+2024-11-14 19:21:25.839 -03:00 [ERR] Se intentó obtener los cupones activos de un cliente, pero ocurrió un error: Error al obtener cupones activos: No se encontraron cupones para el cliente 1
+2024-11-14 19:21:45.101 -03:00 [ERR] Se llamó al endpoint para obtener todos los cupones activos por CodCliente.
+2024-11-14 19:22:00.652 -03:00 [ERR] Se intentó usar un cupón, pero ocurrió un error: Error: El cupón 406-055-401 no pertenece al cliente con Cod-Cliente 1.

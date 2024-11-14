@@ -3,96 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\articuloscategoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\articuloscategoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\logs\\log-error-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\logs\\log-error-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\logs\\log-error-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\logs\\log-error-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\logs\\log-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\logs\\log-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\logs\\log-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\logs\\log-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\controllers\\cuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\controllers\\cuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\interfaces\\icuponesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\interfaces\\icuponesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\models\\clientesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\models\\clientesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\tipo_cuponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\tipo_cuponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\services\\cuponesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\services\\cuponesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\cuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\cuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\articulo_categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\articulo_categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\articuloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\articuloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\cupon_categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\cupon_categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\categoriamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\cupon_clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\cupon_clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\cuponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\cuponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\solicitudcuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\solicitudcuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\precioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\precioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\articulosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\articulosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\preciosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\preciosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\dto\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\dto\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\cuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\cuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\cupones_historialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,92 +55,28 @@
       "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\cupon_clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\tipo_cuponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\tipo_cuponmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\cupones_historialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\cupones_historialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\cupones_detallesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\cupones_detallesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\dto\\cupondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\dto\\cupondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\tipo_cuponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\tipo_cuponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\cupon_categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\cupon_categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\models\\dto\\cupondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\models\\dto\\cupondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\models\\dto\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\models\\dto\\clientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\articuloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\articuloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Services\\ClienteService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClientesApi\\Services\\ClienteService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\articuloscategoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\articuloscategoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\interfaces\\isendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\interfaces\\isendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\interfaces\\icuponesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\interfaces\\icuponesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\solicitudcuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\solicitudcuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\services\\cuponesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\services\\cuponesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\services\\sendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\services\\sendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\services\\cuponesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\services\\cuponesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\interfaces\\icuponesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\interfaces\\icuponesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\interfaces\\isendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\interfaces\\isendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\services\\sendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\services\\sendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\models\\cupon_clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\models\\cupon_clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\controllers\\solicitudcuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:2:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\controllers\\solicitudcuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -202,11 +86,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Log-Error-20241114.txt",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Logs\\Log-Error-20241114.txt",
+              "RelativeDocumentMoniker": "GrupoB\\Logs\\Log-Error-20241114.txt",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Logs\\Log-Error-20241114.txt",
+              "RelativeToolTip": "GrupoB\\Logs\\Log-Error-20241114.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-14T22:22:44.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Log-20241114.txt",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Logs\\Log-20241114.txt",
+              "RelativeDocumentMoniker": "GrupoB\\Logs\\Log-20241114.txt",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Logs\\Log-20241114.txt",
+              "RelativeToolTip": "GrupoB\\Logs\\Log-20241114.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-14T22:22:39.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Log-Error-20241114.txt",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Logs\\Log-Error-20241114.txt",
+              "RelativeDocumentMoniker": "ClientesApi\\Logs\\Log-Error-20241114.txt",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Logs\\Log-Error-20241114.txt",
+              "RelativeToolTip": "ClientesApi\\Logs\\Log-Error-20241114.txt",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-14T22:22:24.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Log-20241114.txt",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Logs\\Log-20241114.txt",
+              "RelativeDocumentMoniker": "ClientesApi\\Logs\\Log-20241114.txt",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Logs\\Log-20241114.txt",
+              "RelativeToolTip": "ClientesApi\\Logs\\Log-20241114.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-14T22:22:18.054Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -218,236 +150,158 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ArticulosCategoriasController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosCategoriasController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\ArticulosCategoriasController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosCategoriasController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\ArticulosCategoriasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T01:14:49.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "ClientesApi\\Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "ClientesApi\\Controllers\\ClientesController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:38:17.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CuponesController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Controllers\\CuponesController.cs",
               "RelativeDocumentMoniker": "ClientesApi\\Controllers\\CuponesController.cs",
               "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Controllers\\CuponesController.cs",
               "RelativeToolTip": "ClientesApi\\Controllers\\CuponesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:38:28.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICuponesService.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Interfaces\\ICuponesService.cs",
-              "RelativeDocumentMoniker": "ClientesApi\\Interfaces\\ICuponesService.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Interfaces\\ICuponesService.cs",
-              "RelativeToolTip": "ClientesApi\\Interfaces\\ICuponesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:41:18.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClientesModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Models\\ClientesModel.cs",
-              "RelativeDocumentMoniker": "ClientesApi\\Models\\ClientesModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Models\\ClientesModel.cs",
-              "RelativeToolTip": "ClientesApi\\Models\\ClientesModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:12:57.207Z",
+              "WhenOpened": "2024-11-14T22:12:59.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CuponesService.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Services\\CuponesService.cs",
-              "RelativeDocumentMoniker": "ClientesApi\\Services\\CuponesService.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Services\\CuponesService.cs",
-              "RelativeToolTip": "ClientesApi\\Services\\CuponesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "ClientesApi\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "ClientesApi\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:50:18.68Z",
+              "WhenOpened": "2024-11-14T22:12:56.021Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CuponesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CuponesController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\CuponesController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CuponesController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\CuponesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAlAAAAAAAAAA==",
+              "Title": "Tipo_CuponController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Tipo_CuponController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Tipo_CuponController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Tipo_CuponController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\Tipo_CuponController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwGUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:01:24.901Z",
+              "WhenOpened": "2024-11-14T22:08:56.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Articulo_CategoriaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Articulo_CategoriaModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\Articulo_CategoriaModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Articulo_CategoriaModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\Articulo_CategoriaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Title": "SolicitudCuponesController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\SolicitudCuponesController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\SolicitudCuponesController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\SolicitudCuponesController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\SolicitudCuponesController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAwwHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T01:48:39.945Z",
+              "WhenOpened": "2024-11-14T22:04:34.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ArticulosController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\ArticulosController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\ArticulosController.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAcwH4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:02:19.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DataBaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Data\\DataBaseContext.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Data\\DataBaseContext.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Data\\DataBaseContext.cs",
-              "RelativeToolTip": "GrupoB\\Data\\DataBaseContext.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:11:09.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Cupon_ClienteModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupon_ClienteModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\Cupon_ClienteModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupon_ClienteModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\Cupon_ClienteModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:51:28.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CuponModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\CuponModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\CuponModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\CuponModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\CuponModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:01:52.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ArticulosModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\ArticulosModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\ArticulosModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\ArticulosModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\ArticulosModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T16:08:39.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Cupon_CategoriaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupon_CategoriaModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\Cupon_CategoriaModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupon_CategoriaModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\Cupon_CategoriaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T13:18:57.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "PreciosController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\PreciosController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\PreciosController.cs",
               "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\PreciosController.cs",
               "RelativeToolTip": "GrupoB\\Controllers\\PreciosController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAswB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAcwGUAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T22:56:25.066Z",
+              "WhenOpened": "2024-11-14T22:03:18.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CategoriasController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CategoriasController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\CategoriasController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CategoriasController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\CategoriasController.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "CuponesController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CuponesController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\CuponesController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CuponesController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\CuponesController.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAkwJMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:01:14.81Z",
+              "WhenOpened": "2024-11-14T22:01:14.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cupones_HistorialController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_HistorialController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupones_HistorialController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_HistorialController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\Cupones_HistorialController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAgwHQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:58:34.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "CategoriaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\CategoriaModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\CategoriaModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\CategoriaModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\CategoriaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "Cupones_DetallesController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_DetallesController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupones_DetallesController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_DetallesController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\Cupones_DetallesController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAA0wGYAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:01:47.536Z",
+              "WhenOpened": "2024-11-14T21:56:11.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PreciosModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\PreciosModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\PreciosModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\PreciosModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\PreciosModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABfAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Cupon_ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_ClienteController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupon_ClienteController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_ClienteController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\Cupon_ClienteController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAcwH8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:01:53.253Z",
+              "WhenOpened": "2024-11-14T21:51:20.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Cupon_CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_CategoriaController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupon_CategoriaController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_CategoriaController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\Cupon_CategoriaController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAA2wFYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:48:30.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\CategoriasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:45:57.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ArticulosController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\ArticulosController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\ArticulosController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wCEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T21:43:06.128Z",
               "EditorCaption": ""
             },
             {
@@ -458,358 +312,36 @@
               "RelativeDocumentMoniker": "GrupoB\\Program.cs",
               "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Program.cs",
               "RelativeToolTip": "GrupoB\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADkAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:34:37.599Z",
+              "WhenOpened": "2024-11-14T21:36:00.231Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\appsettings.json",
-              "RelativeDocumentMoniker": "GrupoB\\appsettings.json",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\appsettings.json",
-              "RelativeToolTip": "GrupoB\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-07T14:37:24.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DataBaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Data\\DataBaseContext.cs",
-              "RelativeDocumentMoniker": "ClientesApi\\Data\\DataBaseContext.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Data\\DataBaseContext.cs",
-              "RelativeToolTip": "ClientesApi\\Data\\DataBaseContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "DocumentIndex": 16,
+              "Title": "ArticulosCategoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosCategoriasController.cs",
+              "RelativeDocumentMoniker": "GrupoB\\Controllers\\ArticulosCategoriasController.cs",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosCategoriasController.cs",
+              "RelativeToolTip": "GrupoB\\Controllers\\ArticulosCategoriasController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwF4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:53:35.502Z"
+              "WhenOpened": "2024-11-14T21:33:19.257Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\appsettings.json",
-              "RelativeDocumentMoniker": "ClientesApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\appsettings.json",
-              "RelativeToolTip": "ClientesApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-06T22:32:23.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Program.cs",
               "RelativeDocumentMoniker": "ClientesApi\\Program.cs",
               "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Program.cs",
               "RelativeToolTip": "ClientesApi\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:46:33.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ClienteDto.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\DTO\\ClienteDto.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\DTO\\ClienteDto.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\DTO\\ClienteDto.cs",
-              "RelativeToolTip": "GrupoB\\Models\\DTO\\ClienteDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T13:46:44.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Cupon_ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_ClienteController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupon_ClienteController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_ClienteController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\Cupon_ClienteController.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:51:31.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Cupones_DetallesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_DetallesController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupones_DetallesController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_DetallesController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\Cupones_DetallesController.cs",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:01:20.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Cupones_HistorialController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_HistorialController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupones_HistorialController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_HistorialController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\Cupones_HistorialController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAIwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:01:22.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CuponDto.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\DTO\\CuponDto.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\DTO\\CuponDto.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\DTO\\CuponDto.cs",
-              "RelativeToolTip": "GrupoB\\Models\\DTO\\CuponDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T14:14:53.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Tipo_CuponModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Tipo_CuponModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\Tipo_CuponModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Tipo_CuponModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\Tipo_CuponModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:01:54.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Cupones_DetallesModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupones_DetallesModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\Cupones_DetallesModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupones_DetallesModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\Cupones_DetallesModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:31:32.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Cupones_HistorialModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupones_HistorialModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\Cupones_HistorialModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupones_HistorialModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\Cupones_HistorialModel.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:31:33.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ISendEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Interfaces\\ISendEmailService.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Interfaces\\ISendEmailService.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Interfaces\\ISendEmailService.cs",
-              "RelativeToolTip": "GrupoB\\Interfaces\\ISendEmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:53:29.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ICuponesServices.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Interfaces\\ICuponesServices.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Interfaces\\ICuponesServices.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Interfaces\\ICuponesServices.cs",
-              "RelativeToolTip": "GrupoB\\Interfaces\\ICuponesServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:57:34.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Tipo_CuponController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Tipo_CuponController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Tipo_CuponController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Tipo_CuponController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\Tipo_CuponController.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAIwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:01:32.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CuponDto.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Models\\DTO\\CuponDto.cs",
-              "RelativeDocumentMoniker": "ClientesApi\\Models\\DTO\\CuponDto.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Models\\DTO\\CuponDto.cs",
-              "RelativeToolTip": "ClientesApi\\Models\\DTO\\CuponDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T14:15:58.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "SolicitudCuponesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\SolicitudCuponesController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\SolicitudCuponesController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\SolicitudCuponesController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\SolicitudCuponesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:51:28.258Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ClienteDto.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Models\\DTO\\ClienteDto.cs",
-              "RelativeDocumentMoniker": "ClientesApi\\Models\\DTO\\ClienteDto.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Models\\DTO\\ClienteDto.cs",
-              "RelativeToolTip": "ClientesApi\\Models\\DTO\\ClienteDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T13:47:20.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Cupon_CategoriaController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_CategoriaController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupon_CategoriaController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_CategoriaController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\Cupon_CategoriaController.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:03:29.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "CuponesService.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Services\\CuponesService.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Services\\CuponesService.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Services\\CuponesService.cs",
-              "RelativeToolTip": "GrupoB\\Services\\CuponesService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T13:18:49.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "SendEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Services\\SendEmailService.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Services\\SendEmailService.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Services\\SendEmailService.cs",
-              "RelativeToolTip": "GrupoB\\Services\\SendEmailService.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA6wDIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:53:20.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\appsettings.json",
-              "RelativeDocumentMoniker": "GrupoB\\appsettings.json",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\appsettings.json",
-              "RelativeToolTip": "GrupoB\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-06T22:32:37.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "CuponesService.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Services\\CuponesService.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Services\\CuponesService.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Services\\CuponesService.cs",
-              "RelativeToolTip": "GrupoB\\Services\\CuponesService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:36:57.435Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ICuponesServices.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Interfaces\\ICuponesServices.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Interfaces\\ICuponesServices.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Interfaces\\ICuponesServices.cs",
-              "RelativeToolTip": "GrupoB\\Interfaces\\ICuponesServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:49:36.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ISendEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Interfaces\\ISendEmailService.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Interfaces\\ISendEmailService.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Interfaces\\ISendEmailService.cs",
-              "RelativeToolTip": "GrupoB\\Interfaces\\ISendEmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:59:05.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "SendEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Services\\SendEmailService.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Services\\SendEmailService.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Services\\SendEmailService.cs",
-              "RelativeToolTip": "GrupoB\\Services\\SendEmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:36:51.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Cupon_ClienteModel.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupon_ClienteModel.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Models\\Cupon_ClienteModel.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Models\\Cupon_ClienteModel.cs",
-              "RelativeToolTip": "GrupoB\\Models\\Cupon_ClienteModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:35:57.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "SolicitudCuponesController.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\SolicitudCuponesController.cs",
-              "RelativeDocumentMoniker": "GrupoB\\Controllers\\SolicitudCuponesController.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\SolicitudCuponesController.cs",
-              "RelativeToolTip": "GrupoB\\Controllers\\SolicitudCuponesController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAowCIAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:34:43.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Services\\ClienteService.cs",
-              "RelativeDocumentMoniker": "ClientesApi\\Services\\ClienteService.cs",
-              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Services\\ClienteService.cs",
-              "RelativeToolTip": "ClientesApi\\Services\\ClienteService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T22:40:22.672Z"
+              "WhenOpened": "2024-11-14T21:03:47.53Z",
+              "EditorCaption": ""
             }
           ]
         }

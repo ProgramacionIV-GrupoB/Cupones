@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CuponesApi.Data;
 using CuponesApi.Models;
+using Serilog;
 
 namespace CuponesApi.Controllers
 {
@@ -25,6 +26,7 @@ namespace CuponesApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cupones_DetallesModel>>> GetCupones_Detalles()
         {
+            Log.Information($"Se llamó al endpoint para obtener los detalles de los cupones.");
             return await _context.Cupones_Detalle.ToListAsync();
         }
 
@@ -39,6 +41,7 @@ namespace CuponesApi.Controllers
                 return NotFound();
             }
 
+            Log.Information($"Se llamó al endpoint para obtener el detalle de un cupón por ID.");
             return cupones_DetallesModel;
         }
 
@@ -52,6 +55,7 @@ namespace CuponesApi.Controllers
                 return BadRequest();
             }
 
+            Log.Information($"Se modificó el detalle de un cupón.");
             _context.Entry(cupones_DetallesModel).State = EntityState.Modified;
 
             try
@@ -81,6 +85,7 @@ namespace CuponesApi.Controllers
             _context.Cupones_Detalle.Add(cupones_DetallesModel);
             await _context.SaveChangesAsync();
 
+            Log.Information($"Se crearon los detalles de un cupón.");
             return CreatedAtAction("GetCupones_DetallesModel", new { id = cupones_DetallesModel.Id_Cupon }, cupones_DetallesModel);
         }
 
@@ -95,6 +100,7 @@ namespace CuponesApi.Controllers
             }
 
             _context.Cupones_Detalle.Remove(cupones_DetallesModel);
+            Log.Information($"Se eliminaron los detalles de un cupón.");
             await _context.SaveChangesAsync();
 
             return NoContent();

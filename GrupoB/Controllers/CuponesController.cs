@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CuponesApi.Data;
 using CuponesApi.Models;
+using Serilog;
 
 namespace CuponesApi.Controllers
 {
@@ -25,6 +26,8 @@ namespace CuponesApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CuponModel>>> GetCupones()
         {
+            Log.Information($"Se llamó al endpoint para obtener todos los cupones.");
+
             return await _context
                 .Cupones
                 .Where(c => c.Activo) // Agregamos el filtro de activos
@@ -36,10 +39,11 @@ namespace CuponesApi.Controllers
 
 
         // GET: api/Cupones/5
-        // GET: api/Cupones/5
         [HttpGet("{id}")]
         public async Task<ActionResult<CuponModel>> GetCuponModel(int id)
         {
+            Log.Information($"Se llamó al endpoint para obtener un cupón por ID.");
+
             var cuponModel = await _context.Cupones
                 .Where(c => c.Activo)
                 .FirstOrDefaultAsync(c => c.Id_Cupon == id);
@@ -59,7 +63,6 @@ namespace CuponesApi.Controllers
             public DateTime? FechaAsignado { get; set; }
         }
 
-        // Endpoint modificado para usar el DTO
         [HttpGet("cliente/{codCliente}")]
         public async Task<ActionResult<IEnumerable<CuponClienteDTO>>> GetCuponesByCliente(string codCliente)
         {
@@ -83,6 +86,7 @@ namespace CuponesApi.Controllers
                 return NotFound($"No se encontraron cupones para el cliente {codCliente}");
             }
 
+            Log.Information($"Se llamó al endpoint para obtener un cupón por CodCliente.");
             return cuponesCliente;
         }
 
@@ -100,6 +104,7 @@ namespace CuponesApi.Controllers
 
             try
             {
+                Log.Information($"Se modificó un cupón.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -123,6 +128,7 @@ namespace CuponesApi.Controllers
         public async Task<ActionResult<CuponModel>> PostCuponModel(CuponModel cuponModel)
         {
             _context.Cupones.Add(cuponModel);
+            Log.Information($"Se creó un cupón.");
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetCuponModel", new { id = cuponModel.Id_Cupon }, cuponModel);
@@ -137,6 +143,8 @@ namespace CuponesApi.Controllers
             {
                 return NotFound();
             }
+
+            Log.Information($"Se eliminó un cupón (ya no es válido).");
 
             cuponModel.Activo = false; // Lo cambie para cumplir con el requerimiento del trabajo, antes borraba el registro
             await _context.SaveChangesAsync();

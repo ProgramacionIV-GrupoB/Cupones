@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CuponesApi.Data;
 using CuponesApi.Models;
+using Serilog;
 
 namespace CuponesApi.Controllers
 {
@@ -25,6 +26,7 @@ namespace CuponesApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoriaModel>>> GetCategorias()
         {
+            Log.Information($"Se consultó al endpoint para obtener todas las categorías");
             return await _context
                 .Categorias
                 .Include(c=>c.Cupones_Categorias)
@@ -36,6 +38,7 @@ namespace CuponesApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<CategoriaModel>> GetCategoriaModel(int id)
         {
+            Log.Information($"Se consultó al endpoint para una categoría por ID");
             var categoriaModel = await _context.Categorias.FindAsync(id);
 
             if (categoriaModel == null)
@@ -60,6 +63,7 @@ namespace CuponesApi.Controllers
 
             try
             {
+                Log.Information($"Se modificó una categoría.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -83,6 +87,7 @@ namespace CuponesApi.Controllers
         public async Task<ActionResult<CategoriaModel>> PostCategoriaModel(CategoriaModel categoriaModel)
         {
             _context.Categorias.Add(categoriaModel);
+            Log.Information($"Se creó una categoría nueva.");
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetCategoriaModel", new { id = categoriaModel.Id_Categoria }, categoriaModel);
@@ -99,6 +104,7 @@ namespace CuponesApi.Controllers
             }
 
             _context.Categorias.Remove(categoriaModel);
+            Log.Information($"Se eliminó una categoría.");
             await _context.SaveChangesAsync();
 
             return NoContent();

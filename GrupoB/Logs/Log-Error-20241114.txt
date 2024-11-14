@@ -1,0 +1,1 @@
+2024-11-14 19:22:00.485 -03:00 [ERR] Se intentó utilizar un cupón, pero el cupón con ID 406-055-401 no pertenece al Cod-Cliente 1.

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CuponesApi.Data;
 using CuponesApi.Models;
+using Serilog;
 
 namespace CuponesApi.Controllers
 {
@@ -25,6 +26,7 @@ namespace CuponesApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PreciosModel>>> GetPrecios()
         {
+            Log.Information($"Se llamó al endpoint para obtener todos los precios.");
             return await _context.Precios.ToListAsync();
         }
 
@@ -39,6 +41,7 @@ namespace CuponesApi.Controllers
                 return NotFound();
             }
 
+            Log.Information($"Se llamó al endpoint para obtener un precio por su ID.");
             return preciosModel;
         }
 
@@ -56,6 +59,7 @@ namespace CuponesApi.Controllers
 
             try
             {
+                Log.Information($"Se modificó un precio.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -79,6 +83,7 @@ namespace CuponesApi.Controllers
         public async Task<ActionResult<PreciosModel>> PostPreciosModel(PreciosModel preciosModel)
         {
             _context.Precios.Add(preciosModel);
+            Log.Information($"Se creó un precio.");
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetPreciosModel", new { id = preciosModel.Id_Precio }, preciosModel);
@@ -93,6 +98,8 @@ namespace CuponesApi.Controllers
             {
                 return NotFound();
             }
+
+            Log.Information($"Se eliminó un precio (se estableció en 0).");
 
             preciosModel.Precio = 0;
             
