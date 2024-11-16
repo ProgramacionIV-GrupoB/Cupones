@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\logs\\log-error-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\logs\\log-error-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\logs\\log-error-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\logs\\log-error-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\grupob\\logs\\log-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2A0B6FE1-0141-4B07-BABE-DE996BA3AF3B}|GrupoB\\CuponesApi.csproj|solutionrelative:grupob\\logs\\log-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\logs\\log-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\logs\\log-20241114.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|c:\\users\\fran\\source\\repos\\cupones\\clientesapi\\controllers\\cuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9824E181-9BB6-458E-AE06-9AF21F7BB3D7}|ClientesApi\\ClientesApi.csproj|solutionrelative:clientesapi\\controllers\\cuponescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -70,11 +86,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Log-Error-20241114.txt",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Logs\\Log-Error-20241114.txt",
+              "RelativeDocumentMoniker": "GrupoB\\Logs\\Log-Error-20241114.txt",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Logs\\Log-Error-20241114.txt",
+              "RelativeToolTip": "GrupoB\\Logs\\Log-Error-20241114.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-14T22:22:44.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Log-20241114.txt",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Logs\\Log-20241114.txt",
+              "RelativeDocumentMoniker": "GrupoB\\Logs\\Log-20241114.txt",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Logs\\Log-20241114.txt",
+              "RelativeToolTip": "GrupoB\\Logs\\Log-20241114.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-14T22:22:39.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Log-Error-20241114.txt",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Logs\\Log-Error-20241114.txt",
+              "RelativeDocumentMoniker": "ClientesApi\\Logs\\Log-Error-20241114.txt",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Logs\\Log-Error-20241114.txt",
+              "RelativeToolTip": "ClientesApi\\Logs\\Log-Error-20241114.txt",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-14T22:22:24.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Log-20241114.txt",
+              "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Logs\\Log-20241114.txt",
+              "RelativeDocumentMoniker": "ClientesApi\\Logs\\Log-20241114.txt",
+              "ToolTip": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Logs\\Log-20241114.txt",
+              "RelativeToolTip": "ClientesApi\\Logs\\Log-20241114.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-14T22:22:18.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CuponesController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Controllers\\CuponesController.cs",
               "RelativeDocumentMoniker": "ClientesApi\\Controllers\\CuponesController.cs",
@@ -87,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ClientesController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Controllers\\ClientesController.cs",
               "RelativeDocumentMoniker": "ClientesApi\\Controllers\\ClientesController.cs",
@@ -100,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Tipo_CuponController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Tipo_CuponController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\Tipo_CuponController.cs",
@@ -113,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "SolicitudCuponesController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\SolicitudCuponesController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\SolicitudCuponesController.cs",
@@ -126,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PreciosController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\PreciosController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\PreciosController.cs",
@@ -139,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "CuponesController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CuponesController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\CuponesController.cs",
@@ -152,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Cupones_HistorialController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_HistorialController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupones_HistorialController.cs",
@@ -165,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Cupones_DetallesController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupones_DetallesController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupones_DetallesController.cs",
@@ -178,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Cupon_ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_ClienteController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupon_ClienteController.cs",
@@ -191,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Cupon_CategoriaController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\Cupon_CategoriaController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\Cupon_CategoriaController.cs",
@@ -204,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "CategoriasController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\CategoriasController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\CategoriasController.cs",
@@ -217,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ArticulosController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\ArticulosController.cs",
@@ -229,12 +305,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Program.cs",
               "RelativeDocumentMoniker": "GrupoB\\Program.cs",
@@ -247,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ArticulosCategoriasController.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\GrupoB\\Controllers\\ArticulosCategoriasController.cs",
               "RelativeDocumentMoniker": "GrupoB\\Controllers\\ArticulosCategoriasController.cs",
@@ -260,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Fran\\Source\\Repos\\Cupones\\ClientesApi\\Program.cs",
               "RelativeDocumentMoniker": "ClientesApi\\Program.cs",

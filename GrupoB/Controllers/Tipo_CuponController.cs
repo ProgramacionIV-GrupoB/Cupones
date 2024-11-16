@@ -22,31 +22,46 @@ namespace CuponesApi.Controllers
             _context = context;
         }
 
-        // GET: api/Tipo_Cupon
+        // GET: api/Tipo_Cupon  
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Tipo_CuponModel>>> GetTipo_Cupon()
         {
-            Log.Information($"Se llamó al endpoint para obtener los tipos de los cupones.");
-            return await _context.Tipo_Cupon.ToListAsync();
+            Log.Information("Se llamó al endpoint para obtener los tipos de los cupones.");
+            try
+            {
+                var tiposCupon = await _context.Tipo_Cupon.ToListAsync();
+                return Ok(tiposCupon);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al obtener los tipos de los cupones.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener los tipos de cupones.");
+            }
         }
 
-        // GET: api/Tipo_Cupon/5
+        // GET: api/Tipo_Cupon/5  
         [HttpGet("{id}")]
         public async Task<ActionResult<Tipo_CuponModel>> GetTipo_CuponModel(int id)
         {
-            var tipo_CuponModel = await _context.Tipo_Cupon.FindAsync(id);
-
-            if (tipo_CuponModel == null)
+            Log.Information($"Se llamó al endpoint para obtener el TipoCupón con ID: {id}.");
+            try
             {
-                return NotFound();
+                var tipo_CuponModel = await _context.Tipo_Cupon.FindAsync(id);
+                if (tipo_CuponModel == null)
+                {
+                    Log.Warning($"TipoCupón con ID: {id} no encontrado.");
+                    return NotFound();
+                }
+                return Ok(tipo_CuponModel);
             }
-
-            Log.Information($"Se llamó al endpoint para obtener el TipoCupón por ID.");
-            return tipo_CuponModel;
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error al obtener el TipoCupón con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener el TipoCupón.");
+            }
         }
 
-        // PUT: api/Tipo_Cupon/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Tipo_Cupon/5  
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTipo_CuponModel(int id, Tipo_CuponModel tipo_CuponModel)
         {
@@ -59,7 +74,7 @@ namespace CuponesApi.Controllers
 
             try
             {
-                Log.Information($"Se modificó el tipo de un cupón.");
+                Log.Information($"Se modificó el tipo de cupón con ID: {id}.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -70,40 +85,62 @@ namespace CuponesApi.Controllers
                 }
                 else
                 {
-                    throw;
+                    Log.Error($"Error de concurrencia al actualizar el TipoCupón con ID: {id}.");
+                    return StatusCode(StatusCodes.Status409Conflict, "Error de concurrencia al actualizar el tipo de cupón.");
                 }
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error inesperado al modificar el tipo de cupón con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al modificar el tipo de cupón.");
             }
 
             return NoContent();
         }
 
-        // POST: api/Tipo_Cupon
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Tipo_Cupon  
         [HttpPost]
         public async Task<ActionResult<Tipo_CuponModel>> PostTipo_CuponModel(Tipo_CuponModel tipo_CuponModel)
         {
-            _context.Tipo_Cupon.Add(tipo_CuponModel);
-            Log.Information($"Se estableció el tipo de un cupón.");
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Tipo_Cupon.Add(tipo_CuponModel);
+                Log.Information("Se estableció un nuevo tipo de cupón.");
+                await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTipo_CuponModel", new { id = tipo_CuponModel.Id_Tipo_Cupon }, tipo_CuponModel);
+                return CreatedAtAction(nameof(GetTipo_CuponModel), new { id = tipo_CuponModel.Id_Tipo_Cupon }, tipo_CuponModel);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al crear un nuevo tipo de cupón.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al crear el tipo de cupón.");
+            }
         }
 
-        // DELETE: api/Tipo_Cupon/5
+        // DELETE: api/Tipo_Cupon/5  
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTipo_CuponModel(int id)
         {
-            var tipo_CuponModel = await _context.Tipo_Cupon.FindAsync(id);
-            if (tipo_CuponModel == null)
+            try
             {
-                return NotFound();
+                var tipo_CuponModel = await _context.Tipo_Cupon.FindAsync(id);
+                if (tipo_CuponModel == null)
+                {
+                    Log.Warning($"El TipoCupón con ID: {id} no encontrado.");
+                    return NotFound();
+                }
+
+                Log.Information($"Se eliminó el tipo de cupón con ID: {id}.");
+                _context.Tipo_Cupon.Remove(tipo_CuponModel);
+                await _context.SaveChangesAsync();
+
+                return NoContent();
             }
-
-            Log.Information($"Se eliminó el tipo de un cupón.");
-            _context.Tipo_Cupon.Remove(tipo_CuponModel);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error al eliminar el TipoCupón con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al eliminar el tipo de cupón.");
+            }
         }
 
         private bool Tipo_CuponModelExists(int id)

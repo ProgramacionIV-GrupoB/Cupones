@@ -22,38 +22,56 @@ namespace CuponesApi.Controllers
             _context = context;
         }
 
-        // GET: api/Cupones
+        // GET: api/Cupones  
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CuponModel>>> GetCupones()
         {
-            Log.Information($"Se llamó al endpoint para obtener todos los cupones.");
+            Log.Information("Se llamó al endpoint para obtener todos los cupones.");
 
-            return await _context
-                .Cupones
-                .Where(c => c.Activo) // Agregamos el filtro de activos
-                .Include(c => c.Cupones_Categorias)
-                .ThenInclude(cc => cc.Categoria)
-                .Include(c => c.Tipo_Cupon)
-                .ToListAsync();
+            try
+            {
+                var cupones = await _context
+                    .Cupones
+                    .Where(c => c.Activo) // Agregamos el filtro de activos  
+                    .Include(c => c.Cupones_Categorias)
+                    .ThenInclude(cc => cc.Categoria)
+                    .Include(c => c.Tipo_Cupon)
+                    .ToListAsync();
+
+                return Ok(cupones);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al obtener la lista de cupones.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener los cupones.");
+            }
         }
 
-
-        // GET: api/Cupones/5
+        // GET: api/Cupones/5  
         [HttpGet("{id}")]
         public async Task<ActionResult<CuponModel>> GetCuponModel(int id)
         {
-            Log.Information($"Se llamó al endpoint para obtener un cupón por ID.");
+            Log.Information($"Se llamó al endpoint para obtener un cupón por ID: {id}.");
 
-            var cuponModel = await _context.Cupones
-                .Where(c => c.Activo)
-                .FirstOrDefaultAsync(c => c.Id_Cupon == id);
-
-            if (cuponModel == null)
+            try
             {
-                return NotFound();
-            }
+                var cuponModel = await _context.Cupones
+                    .Where(c => c.Activo)
+                    .FirstOrDefaultAsync(c => c.Id_Cupon == id);
 
-            return cuponModel;
+                if (cuponModel == null)
+                {
+                    Log.Warning($"Cupón con ID: {id} no encontrado.");
+                    return NotFound();
+                }
+
+                return Ok(cuponModel);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error al obtener el cupón con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener el cupón.");
+            }
         }
 
         public class CuponClienteDTO
@@ -66,37 +84,47 @@ namespace CuponesApi.Controllers
         [HttpGet("cliente/{codCliente}")]
         public async Task<ActionResult<IEnumerable<CuponClienteDTO>>> GetCuponesByCliente(string codCliente)
         {
-            var cuponesCliente = await _context.Cupones_Clientes
-                .Where(cc => cc.CodCliente == codCliente)
-                .Select(cc => new CuponClienteDTO
-                {
-                    Cupon = _context.Cupones
-                        .Include(c => c.Cupones_Categorias)
-                        .ThenInclude(cc => cc.Categoria)
-                        .Include(c => c.Tipo_Cupon)
-                        .FirstOrDefault(c => c.Id_Cupon == cc.Id_Cupon && c.Activo),
-                    NroCupon = cc.NroCupon,
-                    FechaAsignado = cc.FechaAsignado
-                })
-                .Where(dto => dto.Cupon != null) // Solo poner si el cupón existe
-                .ToListAsync();
+            Log.Information($"Se llamó al endpoint para obtener cupones por CodCliente: {codCliente}.");
 
-            if (!cuponesCliente.Any())
+            try
             {
-                return NotFound($"No se encontraron cupones para el cliente {codCliente}");
-            }
+                var cuponesCliente = await _context.Cupones_Clientes
+                    .Where(cc => cc.CodCliente == codCliente)
+                    .Select(cc => new CuponClienteDTO
+                    {
+                        Cupon = _context.Cupones
+                            .Include(c => c.Cupones_Categorias)
+                            .ThenInclude(cc => cc.Categoria)
+                            .Include(c => c.Tipo_Cupon)
+                            .FirstOrDefault(c => c.Id_Cupon == cc.Id_Cupon && c.Activo),
+                        NroCupon = cc.NroCupon,
+                        FechaAsignado = cc.FechaAsignado
+                    })
+                    .Where(dto => dto.Cupon != null) // Solo incluir si el cupón existe  
+                    .ToListAsync();
 
-            Log.Information($"Se llamó al endpoint para obtener un cupón por CodCliente.");
-            return cuponesCliente;
+                if (!cuponesCliente.Any())
+                {
+                    Log.Warning($"No se encontraron cupones para el cliente {codCliente}.");
+                    return NotFound($"No se encontraron cupones para el cliente {codCliente}");
+                }
+
+                return Ok(cuponesCliente);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error al obtener cupones para el cliente {codCliente}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener los cupones del cliente.");
+            }
         }
 
-        // PUT: api/Cupones/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Cupones/5  
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCuponModel(int id, CuponModel cuponModel)
         {
             if (id != cuponModel.Id_Cupon)
             {
+                Log.Warning($"El ID proporcionado {id} no coincide con el ID del cupón {cuponModel.Id_Cupon}.");
                 return BadRequest();
             }
 
@@ -104,52 +132,71 @@ namespace CuponesApi.Controllers
 
             try
             {
-                Log.Information($"Se modificó un cupón.");
+                Log.Information($"Se modificó un cupón con ID: {id}.");
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException ex)
             {
                 if (!CuponModelExists(id))
                 {
+                    Log.Warning($"Cupón con ID: {id} no encontrado durante la actualización.");
                     return NotFound();
                 }
-                else
-                {
-                    throw;
-                }
+                Log.Error(ex, "Error de concurrencia al actualizar el cupón.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al actualizar el cupón.");
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error inesperado al modificar el cupón con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error inesperado al modificar el cupón.");
             }
 
             return NoContent();
         }
 
-        // POST: api/Cupones
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Cupones  
         [HttpPost]
         public async Task<ActionResult<CuponModel>> PostCuponModel(CuponModel cuponModel)
         {
-            _context.Cupones.Add(cuponModel);
-            Log.Information($"Se creó un cupón.");
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Cupones.Add(cuponModel);
+                Log.Information("Se creó un cupón.");
+                await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCuponModel", new { id = cuponModel.Id_Cupon }, cuponModel);
+                return CreatedAtAction("GetCuponModel", new { id = cuponModel.Id_Cupon }, cuponModel);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al crear un nuevo cupón.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al crear el cupón.");
+            }
         }
 
-        // DELETE: api/Cupones/5
+        // DELETE: api/Cupones/5  
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCuponModel(int id)
         {
-            var cuponModel = await _context.Cupones.FindAsync(id);
-            if (cuponModel == null)
+            try
             {
-                return NotFound();
+                var cuponModel = await _context.Cupones.FindAsync(id);
+                if (cuponModel == null)
+                {
+                    Log.Warning($"El cupón a eliminar con ID: {id} no se encontró.");
+                    return NotFound();
+                }
+
+                Log.Information($"Se eliminó un cupón (ya no es válido) con ID: {id}.");
+                cuponModel.Activo = false; // Cambiar a no activo en lugar de eliminar  
+                await _context.SaveChangesAsync();
+
+                return NoContent();
             }
-
-            Log.Information($"Se eliminó un cupón (ya no es válido).");
-
-            cuponModel.Activo = false; // Lo cambie para cumplir con el requerimiento del trabajo, antes borraba el registro
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error al eliminar el cupón con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al eliminar el cupón.");
+            }
         }
 
         private bool CuponModelExists(int id)

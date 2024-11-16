@@ -22,40 +22,57 @@ namespace CuponesApi.Controllers
             _context = context;
         }
 
-        // GET: api/Categorias
+        // GET: api/Categorias  
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoriaModel>>> GetCategorias()
         {
-            Log.Information($"Se consultó al endpoint para obtener todas las categorías");
-            return await _context
-                .Categorias
-                .Include(c=>c.Cupones_Categorias)
-                .ThenInclude(cc=>cc.Cupon)
-                .ToListAsync();
+            Log.Information("Se consultó al endpoint para obtener todas las categorías");
+            try
+            {
+                var categorias = await _context
+                    .Categorias
+                    .Include(c => c.Cupones_Categorias)
+                    .ThenInclude(cc => cc.Cupon)
+                    .ToListAsync();
+
+                return Ok(categorias);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al obtener las categorías.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener las categorías.");
+            }
         }
 
-        // GET: api/Categorias/5
+        // GET: api/Categorias/5  
         [HttpGet("{id}")]
         public async Task<ActionResult<CategoriaModel>> GetCategoriaModel(int id)
         {
-            Log.Information($"Se consultó al endpoint para una categoría por ID");
-            var categoriaModel = await _context.Categorias.FindAsync(id);
-
-            if (categoriaModel == null)
+            Log.Information($"Se consultó al endpoint para una categoría por ID: {id}");
+            try
             {
-                return NotFound();
+                var categoriaModel = await _context.Categorias.FindAsync(id);
+                if (categoriaModel == null)
+                {
+                    Log.Warning($"Categoría con ID: {id} no encontrada.");
+                    return NotFound();
+                }
+                return Ok(categoriaModel);
             }
-
-            return categoriaModel;
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error al obtener la categoría con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener la categoría.");
+            }
         }
 
-        // PUT: api/Categorias/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Categorias/5  
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategoriaModel(int id, CategoriaModel categoriaModel)
         {
             if (id != categoriaModel.Id_Categoria)
             {
+                Log.Warning($"ID proporcionado {id} no coincide con el ID del modelo {categoriaModel.Id_Categoria}.");
                 return BadRequest();
             }
 
@@ -63,51 +80,73 @@ namespace CuponesApi.Controllers
 
             try
             {
-                Log.Information($"Se modificó una categoría.");
+                Log.Information($"Se modificó una categoría con ID: {id}.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
                 if (!CategoriaModelExists(id))
                 {
+                    Log.Warning($"Categoría con ID: {id} no encontrada durante la actualización.");
                     return NotFound();
                 }
                 else
                 {
-                    throw;
+                    Log.Error($"Error de concurrencia al actualizar la categoría con ID: {id}.");
+                    return StatusCode(StatusCodes.Status409Conflict, "Error de concurrencia al actualizar la categoría.");
                 }
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error inesperado al modificar la categoría con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al modificar la categoría.");
             }
 
             return NoContent();
         }
 
-        // POST: api/Categorias
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Categorias  
         [HttpPost]
         public async Task<ActionResult<CategoriaModel>> PostCategoriaModel(CategoriaModel categoriaModel)
         {
-            _context.Categorias.Add(categoriaModel);
-            Log.Information($"Se creó una categoría nueva.");
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Categorias.Add(categoriaModel);
+                Log.Information("Se creó una nueva categoría.");
+                await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCategoriaModel", new { id = categoriaModel.Id_Categoria }, categoriaModel);
+                return CreatedAtAction(nameof(GetCategoriaModel), new { id = categoriaModel.Id_Categoria }, categoriaModel);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al crear una nueva categoría.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al crear la categoría.");
+            }
         }
 
-        // DELETE: api/Categorias/5
+        // DELETE: api/Categorias/5  
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategoriaModel(int id)
         {
-            var categoriaModel = await _context.Categorias.FindAsync(id);
-            if (categoriaModel == null)
+            try
             {
-                return NotFound();
+                var categoriaModel = await _context.Categorias.FindAsync(id);
+                if (categoriaModel == null)
+                {
+                    Log.Warning($"Categoría con ID: {id} no encontrada para eliminación.");
+                    return NotFound();
+                }
+
+                _context.Categorias.Remove(categoriaModel);
+                Log.Information($"Se eliminó la categoría con ID: {id}.");
+                await _context.SaveChangesAsync();
+                return NoContent();
             }
-
-            _context.Categorias.Remove(categoriaModel);
-            Log.Information($"Se eliminó una categoría.");
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error al eliminar la categoría con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al eliminar la categoría.");
+            }
         }
 
         private bool CategoriaModelExists(int id)

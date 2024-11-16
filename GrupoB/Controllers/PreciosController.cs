@@ -22,36 +22,52 @@ namespace CuponesApi.Controllers
             _context = context;
         }
 
-        // GET: api/Precios
+        // GET: api/Precios  
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PreciosModel>>> GetPrecios()
         {
-            Log.Information($"Se llamó al endpoint para obtener todos los precios.");
-            return await _context.Precios.ToListAsync();
+            Log.Information("Solicitud para obtener todos los precios.");
+            try
+            {
+                var precios = await _context.Precios.ToListAsync();
+                return Ok(precios);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al obtener la lista de precios.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener los precios.");
+            }
         }
 
-        // GET: api/Precios/5
+        // GET: api/Precios/5  
         [HttpGet("{id}")]
         public async Task<ActionResult<PreciosModel>> GetPreciosModel(int id)
         {
-            var preciosModel = await _context.Precios.FindAsync(id);
-
-            if (preciosModel == null)
+            Log.Information($"Solicitud para obtener un precio con ID: {id}.");
+            try
             {
-                return NotFound();
+                var preciosModel = await _context.Precios.FindAsync(id);
+                if (preciosModel == null)
+                {
+                    Log.Warning($"Precio con ID: {id} no encontrado.");
+                    return NotFound();
+                }
+                return Ok(preciosModel);
             }
-
-            Log.Information($"Se llamó al endpoint para obtener un precio por su ID.");
-            return preciosModel;
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error al obtener el precio con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener el precio.");
+            }
         }
 
-        // PUT: api/Precios/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Precios/5  
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPreciosModel(int id, PreciosModel preciosModel)
         {
             if (id != preciosModel.Id_Precio)
             {
+                Log.Warning($"El ID proporcionado {id} no coincide con el ID del modelo {preciosModel.Id_Precio}.");
                 return BadRequest();
             }
 
@@ -59,53 +75,74 @@ namespace CuponesApi.Controllers
 
             try
             {
-                Log.Information($"Se modificó un precio.");
+                Log.Information($"Modificación del precio con ID: {id}.");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
                 if (!PreciosModelExists(id))
                 {
+                    Log.Warning($"Precio con ID: {id} no encontrado durante la actualización.");
                     return NotFound();
                 }
                 else
                 {
+                    Log.Error($"Error de concurrencia al actualizar el precio con ID: {id}.");
                     throw;
                 }
             }
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error inesperado al modificar el precio con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al modificar el precio.");
+            }
 
             return NoContent();
         }
 
-        // POST: api/Precios
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Precios  
         [HttpPost]
         public async Task<ActionResult<PreciosModel>> PostPreciosModel(PreciosModel preciosModel)
         {
-            _context.Precios.Add(preciosModel);
-            Log.Information($"Se creó un precio.");
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Precios.Add(preciosModel);
+                Log.Information("Creación de un nuevo precio.");
+                await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPreciosModel", new { id = preciosModel.Id_Precio }, preciosModel);
+                return CreatedAtAction("GetPreciosModel", new { id = preciosModel.Id_Precio }, preciosModel);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al crear un nuevo precio.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al crear el precio.");
+            }
         }
 
-        // DELETE: api/Precios/5
+        // DELETE: api/Precios/5  
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePreciosModel(int id)
         {
-            var preciosModel = await _context.Precios.FindAsync(id);
-            if (preciosModel == null)
+            try
             {
-                return NotFound();
+                var preciosModel = await _context.Precios.FindAsync(id);
+                if (preciosModel == null)
+                {
+                    Log.Warning($"El precio a eliminar con ID: {id} no encontrado.");
+                    return NotFound();
+                }
+
+                Log.Information($"Eliminación (desactivación) del precio con ID: {id}.");
+                preciosModel.Precio = 0; // Establecemos el precio a 0 en lugar de eliminar  
+                await _context.SaveChangesAsync();
+
+                return NoContent();
             }
-
-            Log.Information($"Se eliminó un precio (se estableció en 0).");
-
-            preciosModel.Precio = 0;
-            
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                Log.Error(ex, $"Error al eliminar el precio con ID: {id}.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al eliminar el precio.");
+            }
         }
 
         private bool PreciosModelExists(int id)

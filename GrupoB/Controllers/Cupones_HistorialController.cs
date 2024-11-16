@@ -22,103 +22,136 @@ namespace CuponesApi.Controllers
             _context = context;
         }
 
-        // GET: api/Cupones_Historial
+        // GET: api/Cupones_Historial  
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cupones_HistorialModel>>> GetCupones_Historial()
         {
-
-            Log.Information($"Se llamó al endpoint para obtener el historial de cupones (cupones expirados).");
-            return await _context.Cupones_Historial.ToListAsync();
+            try
+            {
+                Log.Information("Se llamó al endpoint para obtener el historial de cupones (cupones expirados).");
+                var historials = await _context.Cupones_Historial.ToListAsync();
+                return Ok(historials);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al obtener el historial de cupones.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener los datos.");
+            }
         }
 
-        // GET: api/Cupones_Historial/5
+        // GET: api/Cupones_Historial/5  
         [HttpGet("{id}")]
         public async Task<ActionResult<Cupones_HistorialModel>> GetCupones_HistorialModel(int id)
         {
-            var cupones_HistorialModel = await _context.Cupones_Historial.FindAsync(id);
-            Log.Information($"Se llamó al endpoint para obtener un cupón en el historial (expirado) por ID.");
-
-            if (cupones_HistorialModel == null)
+            try
             {
-                return NotFound();
-            }
+                Log.Information($"Se llamó al endpoint para obtener un cupón en el historial (expirado) por ID: {id}.");
+                var cupones_HistorialModel = await _context.Cupones_Historial.FindAsync(id);
 
-            return cupones_HistorialModel;
+                if (cupones_HistorialModel == null)
+                {
+                    Log.Warning($"Cupón con ID: {id} no encontrado.");
+                    return NotFound();
+                }
+
+                return Ok(cupones_HistorialModel);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al obtener el cupón del historial.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener el dato.");
+            }
         }
 
-        // PUT: api/Cupones_Historial/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Cupones_Historial/5  
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCupones_HistorialModel(int id, Cupones_HistorialModel cupones_HistorialModel)
         {
             if (id != cupones_HistorialModel.Id_Cupon)
             {
+                Log.Warning("El ID proporcionado no coincide con el ID del cupón.");
                 return BadRequest();
             }
 
             _context.Entry(cupones_HistorialModel).State = EntityState.Modified;
-            Log.Information($"Se modificó el historial de un cupón.");
+            Log.Information($"Se modificó el historial de un cupón con ID: {id}.");
 
             try
             {
                 await _context.SaveChangesAsync();
+                return NoContent();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException ex)
             {
                 if (!Cupones_HistorialModelExists(id))
                 {
+                    Log.Warning($"Cupón con ID: {id} no encontrado durante la actualización.");
                     return NotFound();
                 }
                 else
                 {
-                    throw;
+                    return StatusCode(StatusCodes.Status500InternalServerError, "Error al actualizar el cupón.");
                 }
             }
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al modificar el cupón en el historial.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al modificar el cupón.");
+            }
         }
 
-        // POST: api/Cupones_Historial
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Cupones_Historial  
         [HttpPost]
         public async Task<ActionResult<Cupones_HistorialModel>> PostCupones_HistorialModel(Cupones_HistorialModel cupones_HistorialModel)
         {
-            _context.Cupones_Historial.Add(cupones_HistorialModel);
             try
             {
-                Log.Information($"Se utilizó un cupón y se introdujo en el historial.");
+                _context.Cupones_Historial.Add(cupones_HistorialModel);
                 await _context.SaveChangesAsync();
+                Log.Information($"Se utilizó un cupón y se introdujo en el historial con ID: {cupones_HistorialModel.Id_Cupon}.");
+
+                return CreatedAtAction("GetCupones_HistorialModel", new { id = cupones_HistorialModel.Id_Cupon }, cupones_HistorialModel);
             }
-            catch (DbUpdateException)
+            catch (DbUpdateException ex)
             {
                 if (Cupones_HistorialModelExists(cupones_HistorialModel.Id_Cupon))
                 {
+                    Log.Warning($"Conflicto al agregar un cupón; ya existe uno con ID: {cupones_HistorialModel.Id_Cupon}.");
                     return Conflict();
                 }
-                else
-                {
-                    throw;
-                }
+                Log.Error(ex, "Error al agregar el cupón al historial.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al agregar el cupón.");
             }
-
-            return CreatedAtAction("GetCupones_HistorialModel", new { id = cupones_HistorialModel.Id_Cupon }, cupones_HistorialModel);
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error inesperado al agregar el cupón.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error inesperado al agregar el cupón.");
+            }
         }
 
-        // DELETE: api/Cupones_Historial/5
+        // DELETE: api/Cupones_Historial/5  
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCupones_HistorialModel(int id)
         {
-            var cupones_HistorialModel = await _context.Cupones_Historial.FindAsync(id);
-            if (cupones_HistorialModel == null)
+            try
             {
-                return NotFound();
+                var cupones_HistorialModel = await _context.Cupones_Historial.FindAsync(id);
+                if (cupones_HistorialModel == null)
+                {
+                    Log.Warning($"El cupón a eliminar con ID: {id} no se encontró.");
+                    return NotFound();
+                }
+
+                Log.Information($"Se eliminó el rastro de un cupón con ID: {id}.");
+                _context.Cupones_Historial.Remove(cupones_HistorialModel);
+                await _context.SaveChangesAsync();
+                return NoContent();
             }
-
-            Log.Information($"Se eliminó el rastro de un cupón.");
-            _context.Cupones_Historial.Remove(cupones_HistorialModel);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Error al eliminar el cupón del historial.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al eliminar el cupón.");
+            }
         }
 
         private bool Cupones_HistorialModelExists(int id)
